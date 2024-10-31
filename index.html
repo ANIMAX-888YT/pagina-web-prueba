@@ -1,130 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Aníbal Romero Ronchas</title>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura el viewport para dispositivos móviles -->
+    <title>Portafolio de Aníbal Romero Ronchas</title> <!-- Título de la página -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f4f6;
-            color: #333;
+            font-family: Arial, sans-serif; /* Define la fuente del cuerpo del documento */
+            margin: 0; /* Elimina el margen por defecto */
+            padding: 0; /* Elimina el relleno por defecto */
+            background: linear-gradient(to bottom, #4a90e2, #003366); /* Establece un fondo con degradado de azul */
+            color: #333; /* Define el color del texto */
         }
         header {
-            background-color: #4a90e2;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+            background-color: #104888; /* Color de fondo del encabezado */
+            color: #fff; /* Color del texto en el encabezado */
+            padding: 20px; /* Espacio interior del encabezado */
+            text-align: center; /* Centra el texto del encabezado */
         }
         header h1 {
-            margin: 0;
-            font-size: 2.5em;
+            margin: 0; /* Elimina el margen de h1 */
+            font-size: 2.5em; /* Tamaño de fuente del título principal */
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.2em; /* Tamaño de fuente del párrafo en el encabezado */
         }
         #profile-photo {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
+            display: flex; /* Utiliza flexbox para alinear el contenido */
+            justify-content: center; /* Centra el contenido horizontalmente */
+            padding: 20px; /* Espacio interior alrededor de la foto de perfil */
         }
         #profile-photo img {
-            border-radius: 10%;
-            max-width: 200px;
-            height: auto;
+            border-radius: 10%; /* Bordes redondeados para la imagen del perfil */
+            max-width: 200px; /* Ancho máximo de la imagen */
+            height: auto; /* Altura automática para mantener la proporción */
         }
         section {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: 0 auto;
+            padding: 5px 2px; /* Espacio interior para las secciones */
+            max-width: 800px; /* Ancho máximo de las secciones */
+            margin: 30px auto; /* Margen superior e inferior de 30px y centrado horizontalmente */
+        }
+        .content-container {
+            max-width: 900px; /* Ancho máximo del fondo blanco que envuelve el texto */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            background-color: white; /* Color de fondo blanco para el contenedor */
+            border-radius: 8px; /* Bordes redondeados para el contenedor */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+            padding: 20px; /* Espacio interior del contenedor */
         }
         h2 {
-            color: #4a90e2;
-            border-bottom: 2px solid #4a90e2;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            color: #4a90e2; /* Color del texto de los subtítulos */
+            border-bottom: 2px solid #4a90e2; /* Línea inferior azul para separar los títulos */
+            padding-bottom: 10px; /* Espacio inferior del título */
+            margin-bottom: 20px; /* Margen inferior para separar del contenido siguiente */
         }
         .contact, .education, .skills, .interests {
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Margen inferior para separar cada sección */
         }
         .contact a {
-            color: #4a90e2;
-            text-decoration: none;
+            color: #4a90e2; /* Color de los enlaces en la sección de contacto */
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
         }
         footer {
-            background-color: #4a90e2;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            font-size: 0.9em;
+            background-color: #4a90e2; /* Color de fondo del pie de página */
+            color: #fff; /* Color del texto en el pie de página */
+            text-align: center; /* Centra el texto del pie de página */
+            padding: 10px; /* Espacio interior del pie de página */
+            font-size: 0.9em; /* Tamaño de fuente del texto en el pie de página */
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Aníbal Romero Ronchas</h1>
-        <p>Estudiante de Sistemas Microinformáticos y Redes</p>
+        <h1>Aníbal Romero Ronchas</h1> <!-- Título principal de la página -->
+        <p>Estudiante de Sistemas Microinformáticos y Redes</p> <!-- Descripción del autor -->
     </header>
 
     <div id="profile-photo">
-        <img src="media/foto-perfil-anibal.png" alt="Foto de perfil de Aníbal Romero Ronchas">
+        <img src="media/foto-perfil-anibal.png" alt="Foto de perfil de Aníbal Romero Ronchas"> <!-- Imagen del perfil -->
     </div>
 
     <section id="contact">
-        <h2>Contacto</h2>
-        <div class="contact">
+        <div class="content-container">
+            <h2>Contacto</h2>
             <p><strong>Teléfono:</strong> +34 657 73 98 47</p>
-            <p><strong>Email:</strong> <a href="mailto:anibalrr07@hotmail.com">anibalrr07@hotmail.com</a></p>
+            <p><strong>Email:</strong> anibalrr07@hotmail.com</p>
             <p><strong>Dirección:</strong> Calle Escritor Azorín 5, Córdoba - 14004</p>
         </div>
     </section>
 
     <section id="about">
-        <h2>Sobre Mí</h2>
-        <p>Interesado en informática y electrónica desde que tengo memoria. Desde pequeño, supe que este era mi camino, y he estado explorando y aprendiendo sobre tecnología desde entonces. Actualmente estoy cursando el primer curso de Sistemas Microinformáticos y Redes en el Colegio Salesianos de Córdoba, con la intención de continuar mis estudios en Desarrollo de Aplicaciones Multiplataforma en el futuro.</p>
+        <div class="content-container"> <!-- Contenedor con fondo blanco para la sección "Sobre Mí" -->
+            <h2>Sobre Mí</h2> <!-- Título de la sección "Sobre Mí" -->
+            <p>Interesado en informática y electrónica desde que tengo memoria.</p> <!-- Descripción personal -->
+            <p>Desde pequeño supe que era mi camino, me pasaba el día trasteando con cualquier dispositivo que me encontrase, bien fuese el ordenador de mi casa o una impresora que me encontrase en la calle. Me causaba mucha curiosidad todo lo relacionado con lo digital.</p> <!-- Historia personal -->
+            <p>Gracias a esta exposición tan temprana a las tecnologías siempre he sido muy afín a ellas, permitiéndome aprender rápido y además, divirtiéndome en el proceso. De hecho, a día de hoy, sigo investigando y aprendiendo cosas nuevas cada vez que puedo.</p> <!-- Reflexión sobre la relación con la tecnología -->
+        </div>
     </section>
 
     <section id="education">
-        <h2>Educación</h2>
-        <div class="education">
-            <p><strong>Grado Actual:</strong> Primer curso en Sistemas Microinformáticos y Redes (SMR) - Colegio Salesianos de Córdoba</p>
-            <p><strong>Educación Primaria:</strong> CEIP Santos Mártires (Córdoba)</p>
-            <p><strong>Educación Secundaria:</strong> IES Séneca (Córdoba)</p>
-            <p><strong>Nivel de Inglés:</strong> B1 certificado por The Cambridge University Press & Assessment</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Habilidades y Aptitudes</h2>
-        <div class="skills">
-            <ul>
-                <li>Conocimientos en informática y electrónica.</li>
-                <li>Habilidad para hablar en público y hacer exposiciones.</li>
-                <li>Adaptación rápida a nuevos entornos y programas informáticos.</li>
-                <li>Aptitud para el trabajo en equipo y capacidad de liderazgo.</li>
-                <li>Capacidad de resolución de problemas de forma creativa y analítica.</li>
-                <li>Nivel B1 en inglés y vocabulario técnico en informática.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="interests">
-        <h2>Actividades e Intereses</h2>
-        <div class="interests">
-            <p>Mis hobbies principales son el cine, los videojuegos, la lectura y deportes como el ciclismo de montaña, correr o ir al gimnasio. He sido miembro del equipo de rugby amateur CRAC de Córdoba y del Grupo Scout Baden Powell 324, donde adquirí valores como la responsabilidad y el trabajo en equipo. Últimamente, me estoy familiarizando con lenguajes de programación como C# y HTML para crear programas y páginas web.</p>
+        <div class="content-container"> <!-- Contenedor con fondo blanco para la sección "Estudios Realizados" -->
+            <h2>Estudios Realizados</h2> <!-- Título de la sección "Estudios Realizados" -->
+            <div class="education"> <!-- Div contenedor para la educación -->
+                <p><strong>Grado Actual:</strong> Actualmente estoy cursando el primer curso del grado de Sistemas Microinformáticos y Redes (SMR) en el Colegio Salesianos de Córdoba.</p> <!-- Información sobre el grado actual -->
+                <p><strong>Futuras Aspiraciones:</strong> En el futuro me gustaría seguir estudiando este campo, con el grado superior de Desarrollo de Aplicaciones Multiplataforma (DAM).</p> <!-- Aspiraciones académicas -->
+                <p><strong>Educación Primaria:</strong> Educación Primaria cursada en CEIP Santos Mártires. (Córdoba)</p> <!-- Información sobre la educación primaria -->
+                <p><strong>Educación Secundaria:</strong> Educación Secundaria Obligatoria cursada en IES Séneca. (Córdoba)</p> <!-- Información sobre la educación secundaria -->
+                <p><strong>Nivel de Inglés:</strong> certificado de nivel B1 aprobado por The Cambridge University Press & Assessment.</p> <!-- Certificación de inglés -->
+                <p><strong>Curso de Inmersión:</strong> Curso de inmersión lingüística en Canterbury (UKA) con el IES Séneca.</p> <!-- Información sobre el curso de inmersión -->
+            </div>
         </div>
     </section>
 
     <section id="aspirations">
-        <h2>Aspiraciones</h2>
-        <p>Me apasionan los videojuegos y espero en el futuro trabajar como programador enfocado en este ámbito. También considero la posibilidad de trabajar en el desarrollo de aplicaciones multiplataforma o páginas web para iniciar mi carrera en programación.</p>
+        <div class="content-container"> <!-- Contenedor con fondo blanco para la sección "Aspiraciones" -->
+            <h2>Aspiraciones</h2> <!-- Título de la sección "Aspiraciones" -->
+            <p>Siempre me han fascinado los videojuegos y es uno de mis pasatiempos favoritos, pero más fascinante aún me parece crearlos, por lo que en el futuro me gustaría trabajar como programador enfocado a los videojuegos.</p> <!-- Aspiraciones profesionales en videojuegos -->
+            <p>Aunque también barajo la posibilidad de trabajar en aplicaciones multiplataforma o páginas webs, sobre todo para iniciarme en el mundo de la programación.</p> <!-- Otras aspiraciones profesionales -->
+        </div>
+    </section>
+
+    <section id="interests">
+        <div class="content-container"> <!-- Contenedor con fondo blanco para la sección "Actividades e Intereses" -->
+            <h2>Actividades e Intereses</h2> <!-- Título de la sección "Actividades e Intereses" -->
+            <div class="interests"> <!-- Div contenedor para intereses -->
+                <p>Mis principales hobbies son el cine, los videojuegos, la lectura y deportes como el ciclismo de montaña, correr o ir al gimnasio.</p> <!-- Lista de hobbies -->
+                <p>También pertenecí al equipo de rugby amateur CRAC de Córdoba durante varios años.</p> <!-- Información sobre la experiencia en rugby -->
+                <p>Fui miembro del Grupo Scout Baden Powell 324 durante 7 años, donde adquirí valores como la responsabilidad personal y el trabajo en equipo.</p> <!-- Información sobre la experiencia en scouting -->
+                <p>Como he mencionado, me gusta seguir aprendiendo todo lo posible, por lo que últimamente estoy tocando lenguajes de programación como C# y HTML para hacer programas simples y páginas webs.</p> <!-- Intereses en programación -->
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="content-container"> <!-- Contenedor con fondo blanco para la sección "Habilidades y Aptitudes" -->
+            <h2>Habilidades y Aptitudes</h2> <!-- Título de la sección "Habilidades y Aptitudes" -->
+            <div class="skills"> <!-- Div contenedor para habilidades -->
+                <ul> <!-- Lista no ordenada de habilidades -->
+                    <li>Conocimientos en informática y electrónica al estar familiarizado con dispositivos y tecnología desde pequeño.</li> <!-- Habilidad en informática -->
+                    <li>Habilidad y destreza a la hora de hacer exposiciones o hablar en público.</li> <!-- Habilidad de presentación -->
+                    <li>Gran capacidad y rapidez al adaptarme a nuevos entornos y programas informáticos.</li> <!-- Capacidad de adaptación -->
+                    <li>Ganas de aprender cualquier tema relacionado con las tecnologías y la programación.</li> <!-- Interés por el aprendizaje -->
+                    <li>Aptitud a la hora de trabajar en grupos, y capacidad para organizarlos como líder.</li> <!-- Habilidad de trabajo en equipo y liderazgo -->
+                    <li>Nivel de B1 en inglés, además de tener conocimiento del vocabulario orientado y utilizado en la informática.</li> <!-- Competencia en inglés -->
+                    <li>Facilidad a la hora de resolver problemas al investigar todas las soluciones posibles desde diferentes puntos de vista.</li> <!-- Habilidad de resolución de problemas -->
+                    <li>Perfeccionista a la hora de hacer trabajos; ojo crítico para errores que podrían pasar desapercibidos.</li> <!-- Atención al detalle -->
+                    <li>Siempre se me ocurre una manera de mejorar algo en cuanto lo veo.</li> <!-- Iniciativa en la mejora continua -->
+                </ul>
+            </div>
+        </div>
     </section>
 
     <footer>
-        &copy; 2024 Aníbal Romero Ronchas
+        2024 Aníbal Romero Ronchas <!-- Pie de página con derechos de autor -->
     </footer>
 
 </body>
