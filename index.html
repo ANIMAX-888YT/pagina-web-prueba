@@ -68,6 +68,26 @@
             padding: 10px; /* Espacio interior del pie de página */
             font-size: 0.9em; /* Tamaño de fuente del texto en el pie de página */
         }
+        .download-button {
+            background-color: #4a90e2; /* Color de fondo */
+            color: #fff; /* Color del texto */
+            border: none; /* Sin bordes */
+            padding: 15px 30px; /* Espaciado interno */
+            font-size: 16px; /* Tamaño de la fuente */
+            font-weight: bold; /* Texto en negrita */
+            border-radius: 8px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor a una mano */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+        }
+        .download-button:hover {
+            background-color: #357ABD; /* Color al pasar el ratón */
+            transform: scale(1.05); /* Efecto de agrandamiento */
+        }
+
+        /* Efecto de clic */
+        .download-button:active {
+            transform: scale(0.98); /* Pequeña reducción de tamaño */
+        }
     </style>
 </head>
 <body>
@@ -86,7 +106,7 @@
             <h2>Información</h2>
             <p><strong>Fecha de nacimiento: </strong>15/04/2007</p>
             <p><strong>Teléfono:</strong> +34 657 73 98 47</p>
-            <p><strong>Email:</strong> anibalrr07@hotmail.com</p>
+            <p><strong>Email:</strong> <a href="mailto:anibalrr07@hotmail.com">anibalrr07@hotmail.com</a> </p>
            
         </div>
     </section>
@@ -150,6 +170,16 @@
                     <li>Siempre se me ocurre una manera de mejorar algo en cuanto lo veo.</li> <!-- Iniciativa en la mejora continua -->
                 </ul>
             </div>
+        </div>
+    </section>
+
+    <section id="download-curriculum">
+        <div class="content-container">
+            <h2>Descargar curriculum PDF</h2>
+    <a href="media/Currículum Aníbal Romero Ronchas.pdf" download="Currículum Aníbal Romero Ronchas.pdf">
+        <button class="download-button">Descargar Archivo</button>
+    </a>
+           
         </div>
     </section>
 
