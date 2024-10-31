@@ -25,6 +25,16 @@
         header p {
             font-size: 1.2em;
         }
+        #profile-photo {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        #profile-photo img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
         section {
             padding: 40px 20px;
             max-width: 800px;
@@ -36,12 +46,8 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
-        .project, .skill, .contact {
+        .contact, .education, .skills, .interests {
             margin-bottom: 20px;
-        }
-        .project h3, .skill h3, .contact h3 {
-            margin: 0;
-            font-size: 1.5em;
         }
         .contact a {
             color: #4a90e2;
@@ -60,52 +66,65 @@
 
     <header>
         <h1>Aníbal Romero Ronchas</h1>
-        <p>Desarrollador Web | Diseñador UX/UI | Creativo Digital</p>
+        <p>Estudiante de Sistemas Microinformáticos y Redes</p>
     </header>
+
+    <div id="profile-photo">
+        <img src="foto-perfil-anibal.png" alt="Foto de perfil de Aníbal Romero Ronchas">
+    </div>
 
     <section id="about">
         <h2>Sobre Mí</h2>
-        <p>Hola, soy Aníbal Romero Ronchas, un apasionado del desarrollo web y el diseño de interfaces de usuario. Mi misión es crear experiencias digitales que no solo sean atractivas, sino también funcionales y fáciles de usar.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <div class="project">
-            <h3>Proyecto 1: Plataforma de E-commerce</h3>
-            <p>Desarrollo de una plataforma de comercio electrónico con una interfaz intuitiva y diseño responsive.</p>
-        </div>
-        <div class="project">
-            <h3>Proyecto 2: Aplicación de Gestión de Tareas</h3>
-            <p>Aplicación de gestión de tareas enfocada en productividad, con funcionalidad de calendario y notificaciones.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Habilidades</h2>
-        <div class="skill">
-            <h3>Desarrollo Web</h3>
-            <p>HTML, CSS, JavaScript, React, Node.js</p>
-        </div>
-        <div class="skill">
-            <h3>Diseño UX/UI</h3>
-            <p>Adobe XD, Figma, Sketch</p>
-        </div>
+        <p>Interesado en informática y electrónica desde que tengo memoria. Desde pequeño, supe que este era mi camino, y he estado explorando y aprendiendo sobre tecnología desde entonces. Actualmente estoy cursando el primer curso de Sistemas Microinformáticos y Redes en el Colegio Salesianos de Córdoba, con la intención de continuar mis estudios en Desarrollo de Aplicaciones Multiplataforma en el futuro.</p>
     </section>
 
     <section id="contact">
         <h2>Contacto</h2>
         <div class="contact">
-            <h3>Email:</h3>
-            <p><a href="mailto:anibal.romero@example.com">anibal.romero@example.com</a></p>
-        </div>
-        <div class="contact">
-            <h3>LinkedIn:</h3>
-            <p><a href="https://www.linkedin.com/in/anibalromero" target="_blank">linkedin.com/in/anibalromero</a></p>
+            <p><strong>Teléfono:</strong> +34 657 73 98 47</p>
+            <p><strong>Email:</strong> <a href="mailto:anibalrr07@hotmail.com">anibalrr07@hotmail.com</a></p>
+            <p><strong>Dirección:</strong> Calle Escritor Azorín 5, Córdoba - 14004</p>
         </div>
     </section>
 
+    <section id="education">
+        <h2>Educación</h2>
+        <div class="education">
+            <p><strong>Grado Actual:</strong> Primer curso en Sistemas Microinformáticos y Redes (SMR) - Colegio Salesianos de Córdoba</p>
+            <p><strong>Educación Primaria:</strong> CEIP Santos Mártires (Córdoba)</p>
+            <p><strong>Educación Secundaria:</strong> IES Séneca (Córdoba)</p>
+            <p><strong>Nivel de Inglés:</strong> B1 certificado por The Cambridge University Press & Assessment</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades y Aptitudes</h2>
+        <div class="skills">
+            <ul>
+                <li>Conocimientos en informática y electrónica.</li>
+                <li>Habilidad para hablar en público y hacer exposiciones.</li>
+                <li>Adaptación rápida a nuevos entornos y programas informáticos.</li>
+                <li>Aptitud para el trabajo en equipo y capacidad de liderazgo.</li>
+                <li>Capacidad de resolución de problemas de forma creativa y analítica.</li>
+                <li>Nivel B1 en inglés y vocabulario técnico en informática.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="interests">
+        <h2>Actividades e Intereses</h2>
+        <div class="interests">
+            <p>Mis hobbies principales son el cine, los videojuegos, la lectura y deportes como el ciclismo de montaña, correr o ir al gimnasio. He sido miembro del equipo de rugby amateur CRAC de Córdoba y del Grupo Scout Baden Powell 324, donde adquirí valores como la responsabilidad y el trabajo en equipo. Últimamente, me estoy familiarizando con lenguajes de programación como C# y HTML para crear programas y páginas web.</p>
+        </div>
+    </section>
+
+    <section id="aspirations">
+        <h2>Aspiraciones</h2>
+        <p>Me apasionan los videojuegos y espero en el futuro trabajar como programador enfocado en este ámbito. También considero la posibilidad de trabajar en el desarrollo de aplicaciones multiplataforma o páginas web para iniciar mi carrera en programación.</p>
+    </section>
+
     <footer>
-        &copy; 2024 Aníbal Romero Ronchas - Todos los derechos reservados.
+        &copy; 2024 Aníbal Romero Ronchas
     </footer>
 
 </body>
